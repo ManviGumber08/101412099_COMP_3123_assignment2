@@ -20,7 +20,7 @@ services:
     depends_on:
       - mongodb
     environment:
-      - MONGO_URI=mongodb://mongodb:27017/mydatabase
+      - MONGO_URI=mongodb+srv://101412099:<db_password>@cluster0.6ie9d.mongodb.net/mydatabase?retryWrites=true&w=majority
 
   mongodb:
     image: mongo
@@ -40,4 +40,3 @@ services:
 
 volumes:
   mongo-data:
-
